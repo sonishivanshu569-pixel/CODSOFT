@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitLife — Landing Page</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">FitLife</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#cta" class="cta-link">Get Started</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Transform Your Body. Transform Your Life.</h1>
+        <p class="lead">Personalized workouts, meal plans, and progress tracking — everything you need to reach your fitness goals.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#cta">Join Now</a>
+          <a class="btn ghost" href="#about">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card image-card">
+          <!-- Replace with a local image if you prefer: images/hero.jpg -->
+          <img src="https://source.unsplash.com/800x600/?fitness,gym,workout" alt="Workout scene">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Core Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">💪</div>
+          <h3>Personalized Plans</h3>
+          <p>Workouts and meal plans tailored to your goals and fitness level.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📊</div>
+          <h3>Progress Tracking</h3>
+          <p>Track workouts, measurements and improvements over time.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>Community Support</h3>
+          <p>Join challenges, share results, and stay motivated with our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About FitLife</h2>
+        <p>FitLife helps busy people build sustainable fitness habits. Our app provides clear guidance, structured programs, and easy tracking so you can make progress without guesswork.</p>
+        <ul class="about-list">
+          <li>Adaptive workout plans</li>
+          <li>Nutrition guidance and recipes</li>
+          <li>Friendly community and challenges</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <div class="card">
+          <img src="https://source.unsplash.com/600x400/?trainer,fitness,team" alt="Trainer and client">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta">
+    <div class="container cta-inner">
+      <h2>Ready to start your transformation?</h2>
+      <p>Join FitLife today and get a 14-day free trial to explore personalized plans and community challenges.</p>
+      <a class="btn primary large" href="#">Start Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> FitLife. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#cta">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script: year and mobile nav toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
